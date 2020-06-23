@@ -46,3 +46,30 @@ del numbers[1]
 print('numbers : ', numbers)
 
 #list 관련 함수 교재p80~84
+#list 요소 추가 append
+a= [1,2,3]
+a.append(4)
+print('a = ', a)
+a.append([5,6])
+print('a = ', a)
+#list 정렬 sort
+b=[1,4,3,2]
+b.sort()
+print('b= ', b)
+#list 뒤집기 reverse
+a=['a','c','d']
+a.reverse()
+print('a=',a)
+#list 위치반환 index
+a=[1,2,3]
+print('a:' , a.index(3))
+#list 요소 삽입 insert
+a=[1,2,3]
+a.insert(0,4)
+print(a)
+#list 요소 제거 remove - list에서 첫번째로 나오는 값 제거
+a=[1,2,3,3,2,2,2]
+a.remove(2)
+print(a)
+#list
+
