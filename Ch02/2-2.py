@@ -44,5 +44,35 @@ print(fm3 % '06')
 print(fm4 % ('2020', 6,22,'월'))
 
 # 문자열 관련 함수 교재 p67 ~ p71
-
+#문자 개수 세기(count)
+a= "hobby"
+print(a.count('b'))
+#위치 알려주기1(find)
+a='Python is the best choice'
+print(a.find('b'))
+print(a.find('k')) #존재하지 않는 값은 -1로 반환
+#위치 알려주기2(index)
+a='Life is too short'
+print('t의 인덱스 번호:' ,a.index('t'))
+# print('k의 인덱스 번호:' ,a.index('k')) k가 없기때문에 오류발생
+#문자열 삽입(join)
+print('abcd에 "," 삽입 :', ','.join('abcd'))
+print('["a","b","c","d"]에 "," 삽입 :', ','.join(['a','b','c','d']))
+#소문자<->대문자로 바꾸기(upper,lower)
+a='hi'
+b='HELLO'
+print(a.upper())
+print(a.lower())
+#왼쪽, 오른쪽, 양쪽 공백 지우기(lstrip, rstrip, strip)
+a=' hi '
+print(a.lstrip())
+print(a.rstrip())
+print(a.strip())
+#문자열 바꾸기 replace(바꿀문자,바뀌게 될 문자)
+a='Life is too short'
+print(a.replace('Life','too'))
+#문자열 나누기(split)
+print(a.split()) #공백을 기준으로 문자열 나눠서 리스트화한다.
+b="a:b:c:d"
+print(b.split(':')) #:을 기준으로 문자열 나눠서 리스트화한다.
 
