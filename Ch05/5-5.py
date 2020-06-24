@@ -13,16 +13,16 @@ print('r2 :',r2)
 r3=all([1,2,3,4,5])
 r4=all([1,2,3,4,0])
 
-print(r2)
-print(r3)
+print('r3:',r3)
+print('r4:',r4)
 
 
 # any()리스트에서 하나라도 True값이 있으면 전체 True, 모두 False이면 전체 false
 r5 = any([0,'',None,False,5])
 r6 = any([0,'',None,False,[]])
 
-print('r4:',r5)
-print('r5:',r6)
+print('r5:',r5)
+print('r6:',r6)
 
 
 # enumerate
@@ -34,4 +34,7 @@ def sum(a,b):
     return a+b
 add = lambda a,b:a+b
 r7 = sum(1,2)
-r8 = sum(1,2)
+r8 = add(1,2)
+
+print('r7:',r7)
+print('r8:',r8)

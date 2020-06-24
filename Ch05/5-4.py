@@ -42,7 +42,7 @@ if __name__ == "__main__":
     is_exist = False
 
     try:
-        file = open('./test.txt','r')
+        file = open('./te0st.txt','r')
         is_exist= True
     except:
         print('파일이 존재하지 않습니다.')
@@ -59,8 +59,10 @@ if __name__ == "__main__":
         animal = ['사자','호랑이','코끼리','기린']
         print('동물 선택')
         print('1:사자','2:호랑이','3:코끼리','4:기린')
+        i=int(input('숫자입력:'))
+        print('선택한 동물:', animal[i-1])
     except:
         print('잘못 선택하셨습니다.')
     else:
         # try 블럭이 정상 실행된 후 실행되는 블럭
-        print('잘 선택하혔습니다.')
+        print('잘 선택하셨습니다.')
